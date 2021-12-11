@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+:root{
+    --main-bgcolor:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color:var(--main-bgcolor);
+    position:sticky;
+    top:0;
+    z-index: 1;
+
+}
+nav{
+    display:flex;
+}
+.img-1{
+    height:20px;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    padding:0px 10px;
+}
+
+nav ul{
+    height:10vh;
+    display:flex;
+    list-style:none;
+    align-items: center;
+
+}
+nav ul a{
+    text-decoration:none;
+    padding:0px 20px;
+    cursor:pointer;
+    color:white;
+    font-size:1.2rem;
+
+
+}
+nav ul li a:hover{
+    font-weight:bolder;
+    
+}
+.search{
+    display:flex;
+    align-items:center;
+}
+.search input{
+    width: 22vw;
+    height: 5vh;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin: 0px 10px 0px 20px;
+    font-size:1rem;
+}
+.btn{
+    background-color: var(--main-bgcolor);
+    border-radius: 4px;
+    padding: 3px;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+
+}
+.login-btn{
+    display:flex;
+
+}
+.logout-btn{
+    display: flex;
+}
+.btn1{
+    background-color: var(--main-bgcolor);
+    border-radius: 4px;
+    padding: 3px;
+    color: white;
+    font-size:1rem;
+    margin: 20px 10px 20px 350px;
+    cursor:pointer;
+}
+.btn2{
+    background-color: var(--main-bgcolor);
+    border-radius: 4px;
+    padding: 3px;
+    color: white;
+    font-size:1rem;
+    margin: 20px 0px;
+    cursor:pointer;
+}
+.container{
+    margin:10px 0px;
+    height:100vh;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-2{
+      transform:translate(-100vw);
+      animation: slidebar1 7s 2s forwards ease-in-out infinite;
+           
+}
+.img-3{
+      width:34vw;
+      transform: translate(0vw);
+      animation: slidebar2 7s 2s forwards  ease-in-out infinite;
+
+}
+@keyframes slidebar1 {
+      0%{
+          transform: translate(-100vw);
+      }
+      100%{
+          transform: translate(15vw);
+      }
+}
+@keyframes slidebar2 {
+      0%{
+          transform: translate(-30vw);
+      }
+      100%{
+          transform: translate(100vw) ;
+      }
+    
+}
+
+footer{
+    height: 10vh;
+    background-color:var(--main-bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    color:white;
+}
